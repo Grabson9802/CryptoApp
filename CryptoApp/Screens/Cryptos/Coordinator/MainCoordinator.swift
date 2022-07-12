@@ -16,7 +16,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        var vc: UIViewController & Coordinating = ViewController()
+        var vc: UIViewController & Coordinating = CryptosViewController()
         vc.coordinator = self
         navigationController?.setViewControllers([vc], animated: false)
     }
